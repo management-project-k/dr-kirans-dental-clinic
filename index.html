@@ -3,50 +3,281 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Kiran’s Dental Facial Trauma and Implant Center - Home</title>
+    <title>Dr. Kiran’s Dental Facial Trauma and Implant Center - Nandyal</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Anime.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <!-- Calendly Embed -->
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">Dr. Kiran’s Dental Center</div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="testimonials.html">Testimonials</a></li>
-                <li><a href="contact.html">Contact</a></li>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Dr. Kiran’s Dental Center</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#booking" class="nav-link">Book Now</a></li>
             </ul>
-            <div class="mobile-menu">
+            <div class="hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
-    <main>
-        <section class="hero">
-            <h1>Dr. Kiran’s Dental Facial Trauma and Implant Center</h1>
-            <p>Your Smile, Our Priority – Expert Care in Nandyal</p>
-            <div class="rating">5⭐ Rating – Clean & Hygienic</div>
-            <a href="contact.html" class="btn">Book Appointment</a>
-            <a href="https://wa.me/919972431186?text=Hi, I'd like to book an appointment at Dr. Kiran’s Dental Center." class="btn whatsapp-btn">WhatsApp Us</a>
-        </section>
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Expert Care for Your Smile</h1>
+            <p class="hero-subtitle">Dr. Kiran’s Dental Facial Trauma and Implant Center – Premier Dental Care in Nandyal</p>
+            <div class="hero-buttons">
+                <a href="#booking" class="btn btn-primary">Book Appointment</a>
+                <a href="https://wa.me/919972431186" class="btn btn-secondary" target="_blank">
+                    <i class="fab fa-whatsapp"></i> WhatsApp Chat
+                </a>
+            </div>
+        </div>
+        <div class="hero-stats">
+            <div class="stat">
+                <h3 class="counter" data-target="5">0</h3>
+                <p>⭐ Ratings</p>
+            </div>
+            <div class="stat">
+                <h3 class="counter" data-target="1000">0</h3>
+                <p>Patients Treated</p>
+            </div>
+            <div class="stat">
+                <h3 class="counter" data-target="1">0</h3>
+                <p>Years of Service</p>
+            </div>
+        </div>
+        <!-- Background Image Overlay -->
+        <div class="hero-bg"></div>
+    </section>
 
-        <section class="section">
-            <h2>Welcome to Our Clinic</h2>
-            <p>Located in Sanjeeva Nagar, Nandyal, we provide top-notch dental and facial trauma services with a focus on hygiene and patient comfort. Experience modern dentistry tailored to your needs.</p>
-            <!-- Calendly Embed Placeholder – See integration instructions below -->
-            <div id="calendly-embed"></div>
-        </section>
-    </main>
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <p class="section-desc">At Dr. Kiran’s Dental Facial Trauma and Implant Center, we provide world-class dental care with a focus on hygiene and patient comfort. Established in Nandyal, our clinic adheres to the highest standards of sterilization and uses state-of-the-art equipment. With 1 year of dedicated service, our team is committed to transforming smiles through expertise in dental implants, facial trauma, and more.</p>
+            <div class="team-grid">
+                <div class="team-card">
+                    <img src="https://source.unsplash.com/300x300/?dentist,portrait" alt="Dr. Kiran">
+                    <h3>Dr. Kiran</h3>
+                    <p>Lead Dentist & Implant Specialist</p>
+                </div>
+                <div class="team-card">
+                    <img src="https://source.unsplash.com/300x300/?doctor,portrait" alt="Team Member">
+                    <h3>Dr. Team Member</h3>
+                    <p>Facial Trauma Expert</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-tooth"></i>
+                    <h3>Dental Implants</h3>
+                    <p>Advanced implant solutions for missing teeth.</p>
+                    <div class="faq">
+                        <details>
+                            <summary>What is a dental implant?</summary>
+                            <p>A titanium post surgically placed into the jawbone to support a crown.</p>
+                        </details>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-bandage"></i>
+                    <h3>Facial Trauma</h3>
+                    <p>Expert treatment for facial injuries and reconstruction.</p>
+                    <div class="faq">
+                        <details>
+                            <summary>How long does recovery take?</summary>
+                            <p>Typically 4-6 weeks, depending on severity.</p>
+                        </details>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-syringe"></i>
+                    <h3>Root Canal (RCT)</h3>
+                    <p>Painless root canal therapy to save your tooth.</p>
+                    <div class="faq">
+                        <details>
+                            <summary>Is it painful?</summary>
+                            <p>No, with modern anesthesia, it's comfortable.</p>
+                        </details>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-laser"></i>
+                    <h3>Laser Dentistry</h3>
+                    <p>Precise, minimally invasive laser treatments.</p>
+                    <div class="faq">
+                        <details>
+                            <summary>What conditions does it treat?</summary>
+                            <p>Gum disease, cavities, and whitening.</p>
+                        </details>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-braces"></i>
+                    <h3>Braces Adjustment</h3>
+                    <p>Orthodontic care for perfect alignment.</p>
+                    <div class="faq">
+                        <details>
+                            <summary>How often are adjustments needed?</summary>
+                            <p>Every 4-6 weeks.</p>
+                        </details>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-prosthesis"></i>
+                    <h3>Maxillofacial Prosthetics</h3>
+                    <p>Custom prosthetics for facial restoration.</p>
+                    <div class="faq">
+                        <details>
+                            <summary>Who needs this?</summary>
+                            <p>Patients with trauma or congenital defects.</p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Patients Say</h2>
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="testimonial-card">
+                        <img src="https://source.unsplash.com/100x100/?person,portrait" alt="Alex">
+                        <h4>Alex</h4>
+                        <p>Review: "Amazing implant procedure! Pain-free and quick recovery."</p>
+                        <span>Date: Jan 2024</span>
+                    </div>
+                    <div class="testimonial-card">
+                        <img src="https://source.unsplash.com/100x100/?person,portrait" alt="Anil">
+                        <h4>Anil</h4>
+                        <p>Review: "The team is so caring. My braces look perfect now."</p>
+                        <span>Date: Feb 2024</span>
+                    </div>
+                    <div class="testimonial-card">
+                        <img src="https://source.unsplash.com/100x100/?person,portrait" alt="Vinay">
+                        <h4>Vinay</h4>
+                        <p>Review: "Excellent facial trauma care. Highly recommend!"</p>
+                        <span>Date: Mar 2024</span>
+                    </div>
+                    <div class="testimonial-card">
+                        <img src="https://source.unsplash.com/100x100/?person,portrait" alt="John">
+                        <h4>John</h4>
+                        <p>Review: "Laser dentistry changed my smile. No more pain."</p>
+                        <span>Date: Apr 2024</span>
+                    </div>
+                    <div class="testimonial-card">
+                        <img src="https://source.unsplash.com/100x100/?person,portrait" alt="M Ravi Roy">
+                        <h4>M Ravi Roy</h4>
+                        <p>Review: "Professional and hygienic clinic. Great service."</p>
+                        <span>Date: May 2024</span>
+                    </div>
+                    <div class="testimonial-card">
+                        <img src="https://source.unsplash.com/100x100/?person,portrait" alt="Siri Reddy">
+                        <h4>Siri Reddy</h4>
+                        <p>Review: "Root canal was a breeze. Thank you, Dr. Kiran!"</p>
+                        <span>Date: Jun 2024</span>
+                    </div>
+                    <div class="testimonial-card">
+                        <img src="https://source.unsplash.com/100x100/?person,portrait" alt="Pranavi Reddy">
+                        <h4>Pranavi Reddy</h4>
+                        <p>Review: "Best place for prosthetics in Nandyal."</p>
+                        <span>Date: Jul 2024</span>
+                    </div>
+                    <div class="testimonial-card">
+                        <img src="https://source.unsplash.com/100x100/?person,portrait" alt="Basha">
+                        <h4>Basha</h4>
+                        <p>Review: "Affordable and effective treatments."</p>
+                        <span>Date: Aug 2024</span>
+                    </div>
+                    <div class="testimonial-card">
+                        <img src="https://source.unsplash.com/100x100/?person,portrait" alt="Rani">
+                        <h4>Rani</h4>
+                        <p>Review: "Transformed my smile with braces adjustment."</p>
+                        <span>Date: Sep 2024</span>
+                    </div>
+                    <div class="testimonial-card">
+                        <img src="https://source.unsplash.com/100x100/?person,portrait" alt="Diamond Chinna">
+                        <h4>Diamond Chinna</h4>
+                        <p>Review: "5⭐ service all the way!"</p>
+                        <span>Date: Oct 2024</span>
+                    </div>
+                </div>
+                <button class="carousel-btn prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="carousel-btn next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <p><i class="fas fa-phone"></i> Phone: <a href="tel:+919972431186">09972431186</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> Address: 25-454-a, Oppo Annapurna Bar, Nandyal Bus Stand Road, Sanjeeva Nagar-518501</p>
+                    <a href="https://wa.me/919972431186" class="btn btn-secondary" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                    </a>
+                    <!-- Google Maps Embed -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.123456789!2d78.4789!3d15.4789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTXCsDI4JzQ0LjQiTiA3OMKwMjgnNDguMiJF!5e0!3m2!1sen!2sin!4v1690000000000" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <form id="contact-form" class="contact-form">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                    <textarea id="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <div class="container">
+            <h2 class="section-title">Book an Appointment</h2>
+            <p class="section-desc">Schedule your visit online with our easy Calendly integration.</p>
+            <!-- Calendly Embed -->
+            <div class="calendly-inline-widget" data-url="https://calendly.com/your-username/30min" style="min-width:320px;height:700px;"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2023 Dr. Kiran’s Dental Facial Trauma and Implant Center. All rights reserved. | Phone: 09972431186</p>
+        <p>&copy; 2024 Dr. Kiran’s Dental Facial Trauma and Implant Center. All rights reserved.</p>
     </footer>
 
+    <!-- Custom JS -->
     <script src="script.js"></script>
-    <!-- Calendly Script – Add after integration -->
 </body>
 </html>
